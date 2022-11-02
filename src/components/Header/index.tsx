@@ -26,7 +26,7 @@ export const Header: React.FC = () => {
     return (
         <nav className='header'>
             <div>
-                <Link to={paths.HOME} className='logo'>PhotoGallery</Link>
+                <Link to={paths.HOME} className='logo'>Pictures</Link>
             </div>
             <div className='icon-container'>
                 {socialLinks.map(({ href, component }, index) => (
