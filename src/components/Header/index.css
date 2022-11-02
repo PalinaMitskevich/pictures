@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Montserrat:wght@400;700&display=swap');
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 5px 100px;
+    background-color: #efe1b0;
+}
+
+.logo {
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 40px;
+}
+
+.icon-container {
+    position: absolute;
+    right: 100px;
+    margin-right: 0;
+}
+
+.icon {
+    height: 25px;
+    width: 30px;
+}
