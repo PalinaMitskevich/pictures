@@ -1,0 +1,11 @@
+.photos-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 720px;
+    margin: auto;
+}
+
+.photo {
+    margin-top: 40px;
+}

@@ -21,18 +21,15 @@ const socialLinks: Array<SocialLink> = [
     },
 ]
 
-export const Header: React.FC = () => {
-
-    return (
-        <nav className='header'>
-            <div>
-                <Link to={paths.HOME} className='logo'>Pictures</Link>
-            </div>
-            <div className='icon-container'>
-                {socialLinks.map(({ href, component }, index) => (
-                    <a href={href} key={index}>{component}</a>
-                ))}
-            </div>
-        </nav>
-    );
-};
+export const Header: React.FC = () => (
+    <nav className='header'>
+        <div>
+            <Link to={paths.HOME} className='logo'>Pictures</Link>
+        </div>
+        <div className='icon-container'>
+            {socialLinks.map(({ href, component }, index) => (
+                <a href={href} key={index}>{component}</a>
+            ))}
+        </div>
+    </nav>
+);

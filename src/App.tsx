@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { Header } from './components/Header'
 import { Home } from './pages/Home'
 import { Picture } from './pages/Picture'
@@ -12,7 +12,9 @@ function App() {
         <Header />
         <Routes>
           <Route path={paths.HOME} element={<Home />} />
-          <Route path={paths.PICTURE} element={<Picture />} />
+            <Route path={paths.PICTURE} element={<Picture />}>
+                <Route path={':id'} element={<Picture />} />
+            </Route>
         </Routes>
       </div>
   );
