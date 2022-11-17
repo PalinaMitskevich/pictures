@@ -11,10 +11,12 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path={paths.HOME} element={<Home />} />
-            <Route path={paths.PICTURE} element={<Picture />}>
-                <Route path={':id'} element={<Picture />} />
-            </Route>
+          <Route path={paths.HOME} element={<Home />}>
+              <Route path=':id' element={<Picture />} />
+          </Route>
+          <Route path={paths.PICTURE} element={<Picture />}>
+
+          </Route>
         </Routes>
       </div>
   );

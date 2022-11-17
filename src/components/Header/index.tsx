@@ -28,7 +28,7 @@ export const Header: React.FC = () => (
         </div>
         <div className='icon-container'>
             {socialLinks.map(({ href, component }, index) => (
-                <a href={href} key={index}>{component}</a>
+                <a href={href} key={index} target='_blank'>{component}</a>
             ))}
         </div>
     </nav>

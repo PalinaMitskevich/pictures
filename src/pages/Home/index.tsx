@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { paths } from "../../constants";
 import "./index.css"
+import {Header} from "../../components/Header";
 
 export type Photo = {
     albumId: number
@@ -23,15 +24,18 @@ export const Home: React.FC = () => {
         fetchPhotos()
     }, [])
 
-
-
     return (
-        <div className='photos-container'>
-            {photos.map(({ thumbnailUrl, id }) => (
-                <Link to={`${paths.PICTURE}/${id}`} className='photo' key={id}>
-                    <img alt='square' src={thumbnailUrl} />
-                </Link>
-            ))}
-        </div>
+        <>
+            <Header />
+            <div className='photos-container'>
+                {photos.map(({ thumbnailUrl, id }) => (
+                    <Link to={`../picture/${id}`} className='photo' key={id}>
+                        <img alt='square' src={thumbnailUrl} />
+                    </Link>
+                ))}
+                <Outlet />
+            </div>
+        </>
+
     )
 }
