@@ -1,4 +1,4 @@
-.photos-container {
+.pictures-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -6,6 +6,6 @@
     margin: auto;
 }
 
-.photo {
+.picture {
     margin-top: 40px;
 }

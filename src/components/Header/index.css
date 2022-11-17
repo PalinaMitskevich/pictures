@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@1&family=Montserrat:wght@400;700&display=swap");
 
 .header {
     position: relative;
@@ -10,14 +10,13 @@
 }
 
 .logo {
-    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
     font-size: 40px;
 }
 
 .icon-container {
     position: absolute;
     right: 100px;
-    margin-right: 0;
 }
 
 .icon {
